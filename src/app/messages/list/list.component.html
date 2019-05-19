@@ -1,0 +1,20 @@
+<div class="container main-container">
+    <div class="list-container">
+        <mat-nav-list>
+            <div class="row list-item-row" mat-list-item *ngFor="let message of messages">
+                <div class="col-md-4">
+                    <span>{{message.contact.firstName}} {{message.contact.lastName}}</span>
+                </div>
+                <div class="col-md-4">
+                    <span>{{message.createdAt}}</span>
+                </div>
+                <div class="col-md-4">
+                    <span>{{message.otp}}</span>
+                </div>
+            </div>
+        </mat-nav-list>
+    </div>
+    <div class="bottom-bar" *ngIf="!pageEnd">
+        <button mat-raised-button color="primary" (click)="loadMore()">Load More</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+.main-container {
+    padding: 2rem;
+
+    .list-item-row {
+        padding: 1rem;
+        background: lightgrey;
+        margin: 0.5rem;
+
+        .col-md-4 {
+            text-align: center;
+        }
+
+        span {
+            text-align: center;
+        }
+    }
+
+    .bottom-bar {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}

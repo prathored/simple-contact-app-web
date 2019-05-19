@@ -1,0 +1,15 @@
+<div class="container main-container">
+    <div class="row">
+        <mat-card>
+            <mat-card-content>
+                <mat-form-field>
+                    <input matInput placeholder="Enter your message here" type="text" class="example-right-align" [(ngModel)]="message">
+                    <span matSuffix *ngIf="otp">  Hi. Your OTP is: {{otp}}</span>
+                </mat-form-field>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="sendMessage()">Send</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

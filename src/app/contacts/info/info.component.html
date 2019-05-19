@@ -1,0 +1,11 @@
+<div class="container main-container">
+    <mat-card class="example-card" *ngIf="contact">
+        <mat-card-content>
+            <h3>{{contact.firstName}} {{contact.lastName}}</h3>
+            <h5>{{contact.mobileNumber}}</h5>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="gotoCompose()">Send Message</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

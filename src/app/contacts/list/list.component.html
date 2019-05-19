@@ -1,0 +1,10 @@
+<div class="container main-container">
+    <div class="list-container">
+        <mat-nav-list>
+            <a *ngFor="let contact of contacts" mat-list-item [href]="['/contacts/' + contact._id]"><span>{{contact.firstName}} {{contact.lastName}}</span></a>
+        </mat-nav-list>
+    </div>
+    <div class="bottom-bar" *ngIf="!pageEnd">
+        <button mat-raised-button color="primary" (click)="loadMore()">Load More</button>
+    </div>
+</div>
